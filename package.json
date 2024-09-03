@@ -1,10 +1,13 @@
 {
   "name": "api-rest",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node --watch index.js",
+    "start:mysql": "nodemon server-mysql.js",
+    "start:local": "nodemon server-local.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +17,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "4.19.2",
+    "mysql2": "^3.11.0",
     "nodemon": "3.1.4",
     "zod": "3.23.8"
   }
